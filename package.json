@@ -1,0 +1,29 @@
+{
+  "name": "autums-gemini",
+  "version": "1.0.0",
+  "description": "A desktop wrapper for Gemini.",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder"
+  },
+  "keywords": [
+    "Electron",
+    "Gemini",
+    "Desktop"
+  ],
+  "author": "Autum",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^28.0.0",
+    "electron-builder": "^24.6.4"
+  },
+  "build": {
+    "appId": "com.autum.gemini",
+    "productName": "Autum's Gemini",
+    "win": {
+      "target": "nsis",
+      "icon": "icon.png"
+    }
+  }
+}
